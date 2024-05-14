@@ -1,6 +1,8 @@
 ---
 import Header from "../components/Header/Header.astro";
-
+import Section from "../components/Section/Section.astro";
+import Experience from "../components/Experience/Experience.astro";
+import "@fontsource/source-sans-pro";
 interface Props {
   title: string;
 }
@@ -20,6 +22,54 @@ const { title } = Astro.props;
   </head>
   <body>
     <Header />
-    <slot />
+    <div class="border w-40 md:w-60 m-auto"></div>
+    <Section
+      title="Sobre mí"
+      description="Soy un profesional con experiencia en atención al cliente y desarrollo Frontend. Actualmente trabajo como front-end developer en Plexus desarrollando una aplicación para Openbank en el apartado de fondos de inversión en Argentina. He trabajado como Responsable de Atención al Cliente en IKEA, donde me he encargado de resolver problemas de manera efectiva. También he trabajado como Frontend Developer en Enerclic, una empresa especializada en la fabricación de aparatos de monitorización del gasto energético, donde he sido responsable del desarrollo de la aplicación para visualizar los datos de consumo. Mi experiencia en ambos campos me ha permitido mejorar mis habilidades en comunicación, trabajo en equipo y resolución de problemas, así como en la creación de interfaces de usuario atractivas y funcionales para aplicaciones web. Estoy comprometido con la mejora continua y siempre busco nuevas oportunidades para seguir aprendiendo y desarrollándome profesionalmente. Por otro lado también soy graduado en fotografía."
+    />
+    <div class="border w-40 md:w-60 m-auto"></div>
+
+    <h2 class="text-2xl text-gray-500 mt-10 px-12 md:px-52">Experiencia</h2>
+    <Experience
+      company="Plexus"
+      date="2024-Actualidad"
+      position="Front-end developer"
+      description="Actualmente trabajo como Frontend Developer para OPENBANK. Mi responsabilidad principal es desarrollar interfaces de usuario atractivas, interactiva. Además, colaboré estrechamente con otros miembros del equipo, incluyendo diseñadores, desarrolladores de backend."
+    />
+
+    <Experience
+      company="Plexus"
+      date="2023-2024"
+      position="Front-end developer"
+      description="Actualmente trabajo como Frontend Developer para OPENBANK. Mi responsabilidad principal es desarrollar interfaces de usuario atractivas, interactiva. Además, colaboré estrechamente con otros miembros del equipo, incluyendo diseñadores, desarrolladores de backend."
+    />
+
+    <Experience
+      company="Plexus"
+      date="2022-2023"
+      position="Front-end developer"
+      description="Actualmente trabajo como Frontend Developer para OPENBANK. Mi responsabilidad principal es desarrollar interfaces de usuario atractivas, interactiva. Además, colaboré estrechamente con otros miembros del equipo, incluyendo diseñadores, desarrolladores de backend."
+    />
+
+    <Experience
+      company="Enerclic"
+      date="2021-2022"
+      position="Front-end developer"
+      description="Actualmente trabajo como Frontend Developer para OPENBANK. Mi responsabilidad principal es desarrollar interfaces de usuario atractivas, interactiva. Además, colaboré estrechamente con otros miembros del equipo, incluyendo diseñadores, desarrolladores de backend."
+    />
+
+    <Experience
+      company="Ikea"
+      date="2021-2022"
+      position="Responsable de antención al cliente"
+      description="Actualmente trabajo como Frontend Developer para OPENBANK. Mi responsabilidad principal es desarrollar interfaces de usuario atractivas, interactiva. Además, colaboré estrechamente con otros miembros del equipo, incluyendo diseñadores, desarrolladores de backend."
+    />
+    <h2 class="text-2xl text-gray-500 mt-10 px-12 md:px-52">Formación</h2>
   </body>
 </html>
+
+<style>
+  body {
+    font-family: "Source Sans Pro", sans-serif;
+  }
+</style>

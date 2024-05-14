@@ -1,0 +1,40 @@
+---
+interface Props {
+  company: string;
+  position: string;
+  date: string;
+  description: string;
+}
+
+const { company, position, date, description } = Astro.props;
+---
+
+<section class="my-5">
+  <div class="flex justify-between px-12 md:px-52">
+    <div>
+      <span class="flex mt-4 md:justify-start">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-monitor-dot text-gray-500 mt-1"
+          ><circle cx="19" cy="6" r="3"></circle><path d="M22 12v3a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"></path><path d="M12 17v4"
+          ></path><path d="M8 21h8"></path></svg
+        >
+        <h2 class="text-gray-500 text-xl pl-2">{company}</h2>
+      </span>
+      <span class="text-gray-500">{position}</span>
+    </div>
+    <span class="text-gray-500 pt-5 md:pt-3">{date}</span>
+  </div>
+
+  <p class="text-gray-400 text-justify px-12 pt-4 md:px-52">
+    {description}
+  </p>
+</section>
