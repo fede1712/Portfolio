@@ -1,5 +1,5 @@
 import { renderers } from './renderers.mjs';
-import { l as levels, g as getEventPrefix, L as Logger, A as AstroIntegrationLogger, manifest } from './manifest_HySB3B6Y.mjs';
+import { l as levels, g as getEventPrefix, L as Logger, A as AstroIntegrationLogger, manifest } from './manifest_DYz7CpVn.mjs';
 import { e as appendForwardSlash, j as joinPaths, t as trimSlashes, f as fileExtension, s as slash, p as prependForwardSlash, g as removeTrailingForwardSlash } from './chunks/astro/assets-service_DvZvPWnX.mjs';
 import { R as ROUTE_TYPE_HEADER, l as REROUTE_DIRECTIVE_HEADER, A as AstroError, n as i18nNoLocaleFoundInPath, o as ResponseSentError, p as MiddlewareNoDataOrNextCalled, q as MiddlewareNotAResponse, G as GetStaticPathsRequired, t as InvalidGetStaticPathsReturn, u as InvalidGetStaticPathsEntry, v as GetStaticPathsExpectedParams, w as GetStaticPathsInvalidRouteParam, P as PageNumberParamNotFound, D as DEFAULT_404_COMPONENT, N as NoMatchingStaticPathFound, x as PrerenderDynamicEndpointPathCollide, y as ReservedSlotName, z as renderSlotToString, B as renderJSX, C as chunkToString, H as isRenderInstruction, J as LocalsNotAnObject, K as clientLocalsSymbol, O as clientAddressSymbol$1, Q as PrerenderClientAddressNotAvailable, S as ClientAddressNotAvailable, T as StaticClientAddressNotAvailable, V as renderPage, W as renderEndpoint, X as ASTRO_VERSION, Y as AstroResponseHeadersReassigned, Z as responseSentSymbol$1, _ as RewriteEncounteredAnError, $ as REROUTABLE_STATUS_CODES } from './chunks/astro_Ctkxbzim.mjs';
 import { serialize, parse } from 'cookie';
@@ -2387,7 +2387,7 @@ const _manifest = Object.assign(manifest, {
     middleware: onRequest
 });
 const _args = {
-    "middlewareSecret": "6acbf821-de13-46d9-acd2-48b83dc4517c",
+    "middlewareSecret": "67061824-7b53-4182-821f-127d2fa96af2",
     "skewProtection": false
 };
 const _exports = createExports(_manifest, _args);
