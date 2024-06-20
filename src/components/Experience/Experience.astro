@@ -11,7 +11,7 @@ const { company, position, date, description, sectioType } = Astro.props;
 ---
 
 <section class="my-5">
-  <div class="flex justify-between px-12 md:px-52 2xl:px-96">
+  <div class="flex justify-between">
     <div>
       <span class="flex mt-4 md:justify-start">
         {
@@ -62,5 +62,5 @@ const { company, position, date, description, sectioType } = Astro.props;
     <span class="text-gray-500 pt-5 md:pt-3">{date}</span>
   </div>
 
-  <p class="text-gray-400 text-left md:text-justify px-12 pt-4 md:px-52 2xl:px-96">{description}</p>
+  <p class="text-gray-400 text-left md:text-justify">{description}</p>
 </section>
